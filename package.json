@@ -3,6 +3,10 @@
   "displayName": "arduino-snippets",
   "description": "Code snippets for arduino",
   "version": "0.0.1",
+  "repository": {
+		"type": "git",
+		"url": "https://github.com/ronaldosena/arduino-snippets.git"
+	},
   "publisher": "ronaldosena",
   "engines": {
     "vscode": "^1.27.0"
@@ -17,5 +21,9 @@
         "path": "./snippets/snippets.json"
       }
     ]
-  }
+  },
+  "icon": "assets/img/icon.png",
+  "extensionDependencies": [
+    "vsciot-vscode.vscode-arduino"
+  ]
 }
