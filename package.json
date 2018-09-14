@@ -2,7 +2,7 @@
   "name": "arduino-snippets",
   "displayName": "arduino-snippets",
   "description": "Code snippets for arduino",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "repository": {
 		"type": "git",
 		"url": "https://github.com/ronaldosena/arduino-snippets.git"
@@ -25,5 +25,10 @@
   "icon": "assets/img/icon.png",
   "extensionDependencies": [
     "vsciot-vscode.vscode-arduino"
-  ]
+  ],
+  "keywords": [
+    "Arduino",
+    "Snippets"
+  ],
+  "license": "MIT"
 }
