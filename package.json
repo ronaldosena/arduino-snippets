@@ -1,0 +1,21 @@
+{
+  "name": "arduino-snippets",
+  "displayName": "arduino-snippets",
+  "description": "Code snippets for arduino",
+  "version": "0.0.1",
+  "publisher": "ronaldosena",
+  "engines": {
+    "vscode": "^1.27.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "cpp",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
+}
