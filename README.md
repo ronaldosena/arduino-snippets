@@ -17,12 +17,12 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 | `abs`                | [abs()](https://www.arduino.cc/reference/en/language/functions/math/abs/)                     |
 | `analogRead`         | [analogRead](https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/)                |
 | `analogWrite`        | [analogWrite](https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/)               |
-| `arduino`            | [skelet]( )                    |
+| `arduino`            | [skelet](https://www.arduino.cc/reference/en/)                    |
 | `attachInterrupt`    | [attachInterrupt()](https://www.arduino.cc/reference/en/language/functions/external-interrupts/attachinterrupt/)         |
 | `byte`               | [byte()](https://www.arduino.cc/reference/en/language/variables/conversion/bytecast/)                    |
 | `char`               | [char()](https://www.arduino.cc/reference/en/language/variables/conversion/charcast/)                    |
 | `constrain`          | [constrain()](https://www.arduino.cc/reference/en/language/functions/math/constrain/)               |
-| `define`             | [Macro define]( )              |
+| `define`             | [Macro define](https://www.arduino.cc/reference/en/language/structure/further-syntax/define/)              |
 | `delay`              | [delay()](https://www.arduino.cc/reference/en/language/functions/time/delay/)                   |
 | `delayMicroseconds`  | [delayMicroseconds()](https://www.arduino.cc/reference/en/language/functions/time/delaymicroseconds/)       |
 | `detachInterrupt`    | [detachInterrupt()](https://www.arduino.cc/reference/en/language/functions/external-interrupts/detachinterrupt/)         |
@@ -34,8 +34,8 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 | `if`                 | [if](https://www.arduino.cc/reference/en/language/structure/control-structure/if/)                        |
 | `ifdef`              | [Macro ifdef]( )               |
 | `ifndef`             | [Macro ifndef]( )              |
-| `include`            | [include userlib]( )           |
-| `include`            | [include syslib]( )            |
+| `include`            | [include userlib](https://www.arduino.cc/reference/en/language/structure/further-syntax/include/)           |
+| `include`            | [include syslib](https://www.arduino.cc/reference/en/language/structure/further-syntax/include/)            |
 | `int`                | [int()](https://www.arduino.cc/reference/en/language/variables/conversion/intcast/)                     |
 | `long`               | [long()](https://www.arduino.cc/reference/en/language/variables/conversion/longcast/)                    |
 | `loop`               | [loop](https://www.arduino.cc/reference/en/language/structure/sketch/loop/)                      |
@@ -52,23 +52,23 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 | `pulseIn`            | [pulseIn()](https://www.arduino.cc/reference/en/language/functions/advanced-io/pulsein/)                 |
 | `random`             | [random()](https://www.arduino.cc/reference/en/language/functions/random-numbers/random/)                  |
 | `randomSeed`         | [randomSeed()](https://www.arduino.cc/reference/en/language/functions/random-numbers/randomseed/)              |
-| `savailable`         | [Serial.available()]( )        |
-| `sbegin`             | [Serial.begin()]( )            |
-| `send`               | [Serial.end()]( )              |
-| `sevent`             | [serialEvent()]( )             |
-| `sfind`              | [Serial.find()]( )             |
-| `sfindUntil`         | [Serial.findUntil()]( )        |
-| `sflush`             | [Serial.flush()]( )            |
-| `spfloat`            | [Serial.parseFloat()]( )       |
-| `spint`              | [Serial.parseInt()]( )         |
-| `speek`              | [Serial.peek()]( )             |
-| `sprint`             | [Serial.print()]( )            |
-| `sprint`             | [Serial.println()]( )          |
-| `sread`              | [Serial.read()]( )             |
-| `sreadBytes`         | [Serial.readBytes()]( )        |
-| `sreadBytesUntil`    | [Serial.readBytesUntil()]( )   |
-| `stimeout`           | [Serial.setTimeout()]( )       |
-| `swrite`             | [Serial.write()]( )            |
+| `savailable`         | [Serial.available()](https://www.arduino.cc/reference/en/language/functions/communication/serial/available)        |
+| `sbegin`             | [Serial.begin()](https://www.arduino.cc/reference/en/language/functions/communication/serial/begin)            |
+| `send`               | [Serial.end()](https://www.arduino.cc/reference/en/language/functions/communication/serial/end)              |
+| `sevent`             | [serialEvent()](https://www.arduino.cc/reference/en/language/functions/communication/serial/serialevent)             |
+| `sfind`              | [Serial.find()](https://www.arduino.cc/reference/en/language/functions/communication/serial/find)             |
+| `sfindUntil`         | [Serial.findUntil()](https://www.arduino.cc/reference/en/language/functions/communication/serial/finduntil)        |
+| `sflush`             | [Serial.flush()](https://www.arduino.cc/reference/en/language/functions/communication/serial/flush)            |
+| `spfloat`            | [Serial.parseFloat()](https://www.arduino.cc/reference/en/language/functions/communication/serial/parsefloat)       |
+| `spint`              | [Serial.parseInt()](https://www.arduino.cc/reference/en/language/functions/communication/serial/println)         |
+| `speek`              | [Serial.peek()](https://www.arduino.cc/reference/en/language/functions/communication/serial/peek)             |
+| `sprint`             | [Serial.print()](https://www.arduino.cc/reference/en/language/functions/communication/serial/print)            |
+| `sprint`             | [Serial.println()](https://www.arduino.cc/reference/en/language/functions/communication/serial/print)          |
+| `sread`              | [Serial.read()](https://www.arduino.cc/reference/en/language/functions/communication/serial/read)             |
+| `sreadBytes`         | [Serial.readBytes()](https://www.arduino.cc/reference/en/language/functions/communication/serial/readbytes)        |
+| `sreadBytesUntil`    | [Serial.readBytesUntil()](https://www.arduino.cc/reference/en/language/functions/communication/serial/readbytesuntil)   |
+| `stimeout`           | [Serial.setTimeout()](https://www.arduino.cc/reference/en/language/functions/communication/serial/settimeout)       |
+| `swrite`             | [Serial.write()](https://www.arduino.cc/reference/en/language/functions/communication/serial/write)            |
 | `setup`              | [setup](https://www.arduino.cc/reference/en/language/structure/sketch/setup/)                     |
 | `shiftIn`            | [shiftIn()](https://www.arduino.cc/reference/en/language/functions/advanced-io/shiftin/)                 |
 | `shiftOut`           | [shiftOut()](https://www.arduino.cc/reference/en/language/functions/advanced-io/shiftout/)                |
