@@ -1,323 +1,323 @@
 {
   "abs": {
     "body": "abs(${1:x});$0",
-    "description": "Arduino(C++) abs()",
+    "description": "Arduino abs()",
     "prefix": "abs"
   },
   "analogRead": {
     "body": "analogRead(${1:pin});$0",
-    "description": "Arduino(C++) analogRead",
+    "description": "Arduino analogRead",
     "prefix": "analogRead"
   },
   "analogWrite": {
     "body": "analogWrite(${1:pin}, ${2:value});$0",
-    "description": "Arduino(C++) analogWrite",
+    "description": "Arduino analogWrite",
     "prefix": "analogWrite"
   },
   "arduino": {
     "body": "void setup()\n{\n\t$0\n}\n\nvoid loop()\n{\n\t\n}",
-    "description": "Arduino(C++) skelet",
+    "description": "Arduino skelet",
     "prefix": "arduino"
   },
   "attachInterrupt": {
     "body": "attachInterrupt(${1:interrupt}, ${2:function}, ${3:mode});$0",
-    "description": "Arduino(C++) attachInterrupt()",
+    "description": "Arduino attachInterrupt()",
     "prefix": "attachInterrupt"
   },
   "byte": {
     "body": "byte(${1:x});$0",
-    "description": "Arduino(C++) byte()",
+    "description": "Arduino byte()",
     "prefix": "byte"
   },
   "char": {
     "body": "char(${1:x});$0",
-    "description": "Arduino(C++) char()",
+    "description": "Arduino char()",
     "prefix": "char"
   },
   "constrain": {
     "body": "constrain(${1:x}, ${2:a}, ${3:b});$0",
-    "description": "Arduino(C++) constrain()",
+    "description": "Arduino constrain()",
     "prefix": "constrain"
   },
   "define": {
     "body": "define ${1:IDENTIFIER} ${2:string}$0",
-    "description": "Arduino(C++) Macro define",
+    "description": "Arduino Macro define",
     "prefix": "define"
   },
   "delay": {
     "body": "delay(${1:ms});$0",
-    "description": "Arduino(C++) delay()",
+    "description": "Arduino delay()",
     "prefix": "delay"
   },
   "delayMicroseconds": {
     "body": "delayMicroseconds(${1:us});$0",
-    "description": "Arduino(C++) delayMicroseconds()",
+    "description": "Arduino delayMicroseconds()",
     "prefix": "delayMicroseconds"
   },
   "detachInterrupt": {
     "body": "detachInterrupt(${1:interrupt});$0",
-    "description": "Arduino(C++) detachInterrupt()",
+    "description": "Arduino detachInterrupt()",
     "prefix": "detachInterrupt"
   },
   "digitalRead": {
     "body": "digitalRead(${1:pin});$0",
-    "description": "Arduino(C++) digitalRead",
+    "description": "Arduino digitalRead",
     "prefix": "digitalRead"
   },
   "digitalWrite": {
     "body": "digitalWrite(${1:pin}, ${2:value});$0",
-    "description": "Arduino(C++) digitalWrite",
+    "description": "Arduino digitalWrite",
     "prefix": "digitalWrite"
   },
   "dowhile": {
     "body": "do{\n    ${1:// statement block}\n} while (${2:test condition});$0",
-    "description": "Arduino(C++) do-while",
+    "description": "Arduino do-while",
     "prefix": "dowhile"
   },
   "float": {
     "body": "float(${1:x});$0",
-    "description": "Arduino(C++) float()",
+    "description": "Arduino float()",
     "prefix": "float"
   },
   "for": {
     "body": "for(int ${1:i}=0; ${1:i}<${2}; ${1}++){\n    ${3}\n}$0",
-    "description": "Arduino(C++) for",
+    "description": "Arduino for",
     "prefix": "for"
   },
   "if": {
     "body": "if(${1}){\n    ${2}\n}$0",
-    "description": "Arduino(C++) if",
+    "description": "Arduino if",
     "prefix": "if"
   },
   "ifdef": {
     "body": "ifdef ${1:constant-expression}$0",
-    "description": "Arduino(C++) Macro ifdef",
+    "description": "Arduino Macro ifdef",
     "prefix": "ifdef"
   },
-  "scope": "source.arduino(C++)",
+  "scope": "source.arduino",
   "ifndef": {
     "body": "ifndef ${1:constant-expression}$0",
-    "description": "Arduino(C++) Macro ifndef",
+    "description": "Arduino Macro ifndef",
     "prefix": "ifndef"
   },
   "include": {
     "body": "include \"${1:lib.h}\"$0",
-    "description": "Arduino(C++) include userlib",
+    "description": "Arduino include userlib",
     "prefix": "include"
   },
   "include": {
     "body": "include <${1:lib.h}>$0",
-    "description": "Arduino(C++) include syslib",
+    "description": "Arduino include syslib",
     "prefix": "include"
   },
   "int": {
     "body": "int(${1:x});$0",
-    "description": "Arduino(C++) int()",
+    "description": "Arduino int()",
     "prefix": "int"
   },
   "long": {
     "body": "long(${1:x});$0",
-    "description": "Arduino(C++) long()",
+    "description": "Arduino long()",
     "prefix": "long"
   },
   "loop": {
     "body": "void loop()\n{\n\t$1\n}$0",
-    "description": "Arduino(C++) loop",
+    "description": "Arduino loop",
     "prefix": "loop"
   },
   "map": {
     "body": "map(${1:value}, ${2:fromLow}, ${3:fromHigh}, ${4:toLow}, ${5:toHigh});$0",
-    "description": "Arduino(C++) map()",
+    "description": "Arduino map()",
     "prefix": "map"
   },
   "max": {
     "body": "max(${1:x}, ${2:y});$0",
-    "description": "Arduino(C++) max()",
+    "description": "Arduino max()",
     "prefix": "max"
   },
   "elif": {
     "body": "elif ${1:constant-expression}$0",
-    "description": "Arduino(C++) Macro elif",
+    "description": "Arduino Macro elif",
     "prefix": "elif"
   },
   "micros": {
     "body": "micros();$0",
-    "description": "Arduino(C++) micros()",
+    "description": "Arduino micros()",
     "prefix": "micros"
   },
   "if": {
     "body": "if ${1:constant-expression}$0",
-    "description": "Arduino(C++) Macro if",
+    "description": "Arduino Macro if",
     "prefix": "if"
   },
   "millis": {
     "body": "millis();$0",
-    "description": "Arduino(C++) millis()",
+    "description": "Arduino millis()",
     "prefix": "millis"
   },
   "min": {
     "body": "min(${1:x}, ${2:y});$0",
-    "description": "Arduino(C++) min()",
+    "description": "Arduino min()",
     "prefix": "min"
   },
   "noTone": {
     "body": "noTone(${1:pin});$0",
-    "description": "Arduino(C++) noTone()",
+    "description": "Arduino noTone()",
     "prefix": "noTone"
   },
   "pinMode": {
     "body": "pinMode(${1:pin}, ${2:mode});$0",
-    "description": "Arduino(C++) pinMode",
+    "description": "Arduino pinMode",
     "prefix": "pinMode"
   },
   "pow": {
     "body": "pow(${1:base}, ${2:exponent});$0",
-    "description": "Arduino(C++) pow()",
+    "description": "Arduino pow()",
     "prefix": "pow"
   },
   "pulseIn": {
     "body": "pulseIn(${1:pin}, ${2:value}, ${3:timeout});$0",
-    "description": "Arduino(C++) pulseIn()",
+    "description": "Arduino pulseIn()",
     "prefix": "pulseIn"
   },
   "random": {
     "body": "random(${1:min}, ${2:max});$0",
-    "description": "Arduino(C++) random()",
+    "description": "Arduino random()",
     "prefix": "random"
   },
   "randomSeed": {
     "body": "randomSeed(${1:seed});$0",
-    "description": "Arduino(C++) randomSeed()",
+    "description": "Arduino randomSeed()",
     "prefix": "randomSeed"
   },
   "savailable": {
     "body": "if (Serial.available() > ${1:0}) {\n    ${2}\n}$0",
-    "description": "Arduino(C++) Serial.available()",
+    "description": "Arduino Serial.available()",
     "prefix": "savailable"
   },
   "sbegin": {
     "body": "Serial.begin(${1:9600});$0",
-    "description": "Arduino(C++) Serial.begin()",
+    "description": "Arduino Serial.begin()",
     "prefix": "sbegin"
   },
   "send": {
     "body": "Serial.end();$0",
-    "description": "Arduino(C++) Serial.end()",
+    "description": "Arduino Serial.end()",
     "prefix": "send"
   },
   "sevent": {
     "body": "void serialEvent(){\n    ${1://statements}\n}$0",
-    "description": "Arduino(C++) serialEvent()",
+    "description": "Arduino serialEvent()",
     "prefix": "sevent"
   },
   "sfind": {
     "body": "Serial.find(${1:target});$0",
-    "description": "Arduino(C++) Serial.find()",
+    "description": "Arduino Serial.find()",
     "prefix": "sfind"
   },
   "sfindUntil": {
     "body": "Serial.findUntil(${1:target}, ${2:terminal});$0",
-    "description": "Arduino(C++) Serial.findUntil()",
+    "description": "Arduino Serial.findUntil()",
     "prefix": "sfindUntil"
   },
   "sflush": {
     "body": "Serial.flush();$0",
-    "description": "Arduino(C++) Serial.flush()",
+    "description": "Arduino Serial.flush()",
     "prefix": "sflush"
   },
   "spfloat": {
     "body": "Serial.parseFloat();$0",
-    "description": "Arduino(C++) Serial.parseFloat()",
+    "description": "Arduino Serial.parseFloat()",
     "prefix": "spfloat"
   },
   "spint": {
     "body": "Serial.parseInt();$0",
-    "description": "Arduino(C++) Serial.parseInt()",
+    "description": "Arduino Serial.parseInt()",
     "prefix": "spint"
   },
   "speek": {
     "body": "Serial.peek();$0",
-    "description": "Arduino(C++) Serial.peek()",
+    "description": "Arduino Serial.peek()",
     "prefix": "speek"
   },
   "sprint": {
     "body": "Serial.print(${1:val}, ${2:format});$0",
-    "description": "Arduino(C++) Serial.print()",
+    "description": "Arduino Serial.print()",
     "prefix": "sprint"
   },
   "sprint": {
     "body": "Serial.println(${1:val}, ${2:format});$0",
-    "description": "Arduino(C++) Serial.println()",
+    "description": "Arduino Serial.println()",
     "prefix": "sprint"
   },
   "sread": {
     "body": "Serial.read();$0",
-    "description": "Arduino(C++) Serial.read()",
+    "description": "Arduino Serial.read()",
     "prefix": "sread"
   },
   "sreadBytes": {
     "body": "Serial.readBytes(${1:buffer}, ${2:length});$0",
-    "description": "Arduino(C++) Serial.readBytes()",
+    "description": "Arduino Serial.readBytes()",
     "prefix": "sreadBytes"
   },
   "sreadBytesUntil": {
     "body": "Serial.readBytesUntil(${1:character}, ${2:buffer}, ${2:length});$0",
-    "description": "Arduino(C++) Serial.readBytesUntil()",
+    "description": "Arduino Serial.readBytesUntil()",
     "prefix": "sreadBytesUntil"
   },
   "stimeout": {
     "body": "Serial.setTimeout(${1:time});$0",
-    "description": "Arduino(C++) Serial.setTimeout()",
+    "description": "Arduino Serial.setTimeout()",
     "prefix": "stimeout"
   },
   "swrite": {
     "body": "Serial.write(${1:data});$0",
-    "description": "Arduino(C++) Serial.write()",
+    "description": "Arduino Serial.write()",
     "prefix": "swrite"
   },
   "setup": {
     "body": "void setup()\n{\n\t$1\n}$0",
-    "description": "Arduino(C++) setup",
+    "description": "Arduino setup",
     "prefix": "setup"
   },
   "shiftIn": {
     "body": "shiftIn(${1:dataPin}, ${2:clockPin}, ${3:bitOrder});$0",
-    "description": "Arduino(C++) shiftIn()",
+    "description": "Arduino shiftIn()",
     "prefix": "shiftIn"
   },
   "shiftOut": {
     "body": "shiftOut(${1:dataPin}, ${2:clockPin}, ${3:bitOrder}, ${4:value});$0",
-    "description": "Arduino(C++) shiftOut()",
+    "description": "Arduino shiftOut()",
     "prefix": "shiftOut"
   },
   "sizeof": {
     "body": "sizeof(${1:variable});$0",
-    "description": "Arduino(C++) sizeof()",
+    "description": "Arduino sizeof()",
     "prefix": "sizeof"
   },
   "sqrt": {
     "body": "sqrt(${1:x});$0",
-    "description": "Arduino(C++) sqrt()",
+    "description": "Arduino sqrt()",
     "prefix": "sqrt"
   },
   "switch": {
     "body": "switch (${1}) {\n    case ${2}:\n      ${3:// do something}\n      break;\n    case ${4}:\n      ${5:// do something}\n      break;\n    default:\n      ${6:// do something}\n}$0",
-    "description": "Arduino(C++) switch",
+    "description": "Arduino switch",
     "prefix": "switch"
   },
   "tone": {
     "body": "tone(${1:pin}, ${2:frequency}, ${3:duration});$0",
-    "description": "Arduino(C++) tone()",
+    "description": "Arduino tone()",
     "prefix": "tone"
   },
   "undef": {
     "body": "undef ${1:constant-expression}$0",
-    "description": "Arduino(C++) Macro undef",
+    "description": "Arduino Macro undef",
     "prefix": "undef"
   },
   "while": {
     "body": "while(${1}){\n    ${2:// statement}\n}$0",
-    "description": "Arduino(C++) while",
+    "description": "Arduino while",
     "prefix": "while"
   }
 }

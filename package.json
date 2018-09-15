@@ -2,14 +2,14 @@
   "name": "arduino-snippets",
   "displayName": "arduino-snippets",
   "description": "Code snippets for arduino",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
 		"type": "git",
 		"url": "https://github.com/ronaldosena/arduino-snippets.git"
 	},
   "publisher": "ronaldosena",
   "engines": {
-    "vscode": "^1.27.0"
+    "vscode": "^1.17.0"
   },
   "categories": [
     "Snippets"
@@ -19,13 +19,14 @@
       {
         "language": "cpp",
         "path": "./snippets/snippets.json"
+      },
+      {
+        "extensions": ".ino",
+        "path": "./snippets/arduino.code-snippets"
       }
     ]
   },
   "icon": "assets/img/icon.png",
-  "extensionDependencies": [
-    "vsciot-vscode.vscode-arduino"
-  ],
   "keywords": [
     "Arduino",
     "Snippets"
