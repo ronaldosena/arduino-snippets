@@ -319,5 +319,298 @@
     "body": "while(${1}){\n    ${2:// statement}\n}$0",
     "description": "While statement",
     "prefix": "while"
+  },
+
+// -------------------------------------------- NEWS ---------------------------------------------------------------
+// Advanced I/O
+"pulseInLong": {
+  "body": "pulseInLong(${1:pin}, ${2:value}, ${3:timeout});$0",
+  "description": "is an alternative to pulseIn() which is better at handling long pulse and interrupt affected scenarios..",
+  "prefix": "pulseinlong"
+  },
+// Analog I/O
+"analogReference": {
+  "body": "analogReference(${1:type});$0",
+  "description": "Configures the reference voltage used for analog input (i.e. the value used as the top of the input range).",
+  "prefix": "analogreference"
+  },
+// Math
+"sq": {
+  "body": "sq(${1:x});$0",
+  "description": "Calculates the square of a number: the number multiplied by itself.",
+  "prefix": "sq"
+  },
+//RESOLUTION
+  "analogReadResolution": {
+    "body": "analogReadResolution(${1:bits});$0",
+    "description": "Sets the size (in bits) of the value returned by analogRead().",
+    "prefix": "areadresolution"
+  },
+  "analogWriteResolution": {
+    "body": "analogReadResolution(${1:bits});$0",
+    "description": "Sets the resolution of the analogWrite() function. It defaults to 8 bits.",
+    "prefix": "awriteresolution"
+  },
+  // INTERRRUPTS
+  "attachInterrupt": {
+    "body": "attachInterrupt(digitalPinToInterrupt(${1:pin}), ${2:function}, ${3:mode});$0",
+    "description": "Digital Pins With Interrupts.",
+    "prefix": "attachinterrupt"
+  },
+  "interrupts": {
+    "body": "interrupts();$0",
+    "description": "Re-enables interrupts (after they’ve been disabled by nointerrupts(). Interrupts allow certain important tasks to happen in the background and are enabled by default. Some functions will not work while interrupts are disabled, and incoming communication may be ignored. Interrupts can slightly disrupt the timing of code, however, and may be disabled for particularly critical sections of code.",
+    "prefix": "interrupts"
+  },
+  "noInterrupts": {
+    "body": "noInterrupts();$0",
+    "description": "Disables interrupts (you can re-enable them with interrupts()). Interrupts allow certain important tasks to happen in the background and are enabled by default. Some functions will not work while interrupts are disabled, and incoming communication may be ignored. Interrupts can slightly disrupt the timing of code, however, and may be disabled for particularly critical sections of code.",
+    "prefix": "nointerrupts"
+  },
+  // Bits e Bytes
+  "bit": {
+    "body": "bit(${1:n});$0",
+    "description": "Computes the value of the specified bit",
+    "prefix": "bit"
+  },
+  "bitClear": {
+    "body": "bitClear(${1:x}, ${2:n});$0",
+    "description": "Clears (writes a 0 to) a bit of a numeric variable.",
+    "prefix": "bitclear"
+  },
+  "bitRead": {
+    "body": "bitRead(${1:x}, ${2:n});$0",
+    "description": "Reads a bit of a number.",
+    "prefix": "bitread"
+  },
+  "bitSet": {
+    "body": "bitSet(${1:x}, ${2:n});$0",
+    "description": "Sets (writes a 1 to) a bit of a numeric variable.",
+    "prefix": "bitset"
+  },
+  "bitWrite": {
+    "body": "bitWrite(${1:x}, ${2:n}, ${3:b});$0",
+    "description": "Writes a bit of a numeric variable.",
+    "prefix": "bitwrite"
+  },
+  "highByte": {
+    "body": "highByte(${1:x});$0",
+    "description": "Extracts the high-order (leftmost) byte of a word (or the second lowest byte of a larger data type).",
+    "prefix": "highbyte"
+  },
+  "lowByte": {
+    "body": "lowByte(${1:x});$0",
+    "description": "Extracts the low-order (rightmost) byte of a variable (e.g. a word).",
+    "prefix": "lowbyte"
+  },
+  // Characters
+  "isAlpha": {
+    "body": "isAlpha(${1:thisChar});$0",
+    "description": "Analyse if a char is alpha (that is a letter). Returns true if thisChar contains a letter.",
+    "prefix": "isalpha"
+  },
+  "isAlphaNumeric": {
+    "body": "isAlphaNumeric(${1:thisChar});$0",
+    "description": "Analyse if a char is alphanumeric (that is a letter or a numbers). Returns true if thisChar contains either a number or a letter.",
+    "prefix": "isalphanumeric"
+  },
+  "isAscii": {
+    "body": "isAscii(${1:thisChar});$0",
+    "description": "Analyse if a char is Ascii. Returns true if thisChar contains an Ascii character.",
+    "prefix": "isascii"
+  },
+  "isControl": {
+    "body": "isControl(${1:thisChar});$0",
+    "description": "Analyse if a char is a control character. Returns true if thisChar is a control character.",
+    "prefix": "iscontrol"
+  },
+  "isDigit": {
+    "body": "isDigit(${1:thisChar});$0",
+    "description": "Analyse if a char is a digit (that is a number). Returns true if thisChar is a number.",
+    "prefix": "isdigit"
+  },
+  "isGraph": {
+    "body": "isGraph(${1:thisChar});$0",
+    "description": "Analyse if a char is printable with some content (space is printable but has no content). Returns true if thisChar is printable.",
+    "prefix": "isgraph"
+  },
+  "isHexadecimalDigit": {
+    "body": "isHexadecimalDigit(${1:thisChar});$0",
+    "description": "Analyse if a char is an hexadecimal digit (A-F, 0-9). Returns true if thisChar contains an hexadecimal digit.",
+    "prefix": "ishexadecimaldigit"
+  },
+  "isLowerCase": {
+    "body": "isLowerCase(${1:thisChar});$0",
+    "description": "Analyse if a char is lower case (that is a letter in lower case). Returns true if thisChar contains a letter in lower case.",
+    "prefix": "islowerCase"
+  },
+  "isPrintable": {
+    "body": "isPrintable(${1:thisChar});$0",
+    "description": "Analyse if a char is printable (that is any character that produces an output, even a blank space). Returns true if thisChar is printable.",
+    "prefix": "isprintable"
+  },
+  "isPunct": {
+    "body": "isPunct(${1:thisChar});$0",
+    "description": "Analyse if a char is punctuation (that is a comma, a semicolon, an exlamation mark and so on). Returns true if thisChar is punctuation.",
+    "prefix": "ispunct"
+  },
+  "isSpace": {
+    "body": "isSpace(${1:thisChar});$0",
+    "description": "Analyse if a char is the space character. Returns true if thisChar contains the space character.",
+    "prefix": "isspace"
+  },
+  "isUpperCase": {
+    "body": "isUpperCase(${1:thisChar});$0",
+    "description": "Analyse if a char is upper case (that is, a letter in upper case). Returns true if thisChar is upper case.",
+    "prefix": "isuppercase"
+  },
+  "isWhitespace": {
+    "body": "isWhitespace(${1:thisChar});$0",
+    "description": "Analyse if a char is a white space, that is space, formfeed, newline, carriage return, horizontal tab, and vertical tab. Returns true if thisChar contains a white space.",
+    "prefix": "iswhitespace"
+  },
+  // Trigonometry
+  "cos": {
+    "body": "cos(${1:rad});$0",
+    "description": "Calculates the cosine of an angle (in radians). The result will be between -1 and 1.",
+    "prefix": "cos"
+  },
+  "sin": {
+    "body": "sin(${1:rad});$0",
+    "description": "Calculates the sine of an angle (in radians). The result will be between -1 and 1.",
+    "prefix": "sin"
+  },
+  "tan": {
+    "body": "tan(${1:rad});$0",
+    "description": "Calculates the tangent of an angle (in radians). The result will be between negative infinity and infinity.",
+    "prefix": "tan"
+  },
+
+  // String Fucionts 
+  "c_str": {
+    "body": "c_str();$0",
+    "description": "Converts the contents of a string as a C-style, null-terminated string. Note that this gives direct access to the internal String buffer and should be used with care. In particular, you should never modify the string through the pointer returned. When you modify the String object, or when it is destroyed, any pointer previously returned by c_str() becomes invalid and should not be used any longer.",
+    "prefix": "c_str"
+  },
+  "charAt": {
+    "body": "charAt(${1:n});$0",
+    "description": "Access a particular character of the String.",
+    "prefix": "charat"
+  },
+  "compareTo": {
+    "body": "compareTo(${1:string2});$0",
+    "description": "Compares two Strings, testing whether one comes before or after the other, or whether they’re equal. The strings are compared character by character, using the ASCII values of the characters. That means, for example, that 'a' comes before 'b' but after 'A'. Numbers come before letters.",
+    "prefix": "compareto"
+  },
+  "concat": {
+    "body": "concat(${1:parameter});$0",
+    "description": "Appends the parameter to a String.",
+    "prefix": "concat"
+  },
+  "endsWith": {
+    "body": "endsWith(${1:string2});$0",
+    "description": "Tests whether or not a String ends with the characters of another String.",
+    "prefix": "endswith"
+  },
+  "equals": {
+    "body": "equals(${1:string2});$0",
+    "description": "Compares two strings for equality. The comparison is case-sensitive, meaning the String (hello) is not equal to the String (HELLO).",
+    "prefix": "equals"
+  },
+  "equalsIgnoreCase": {
+    "body": "equalsIgnoreCase(${1:string2});$0",
+    "description": "Compares two Strings for equality. The comparison is not case-sensitive, meaning the String (hello) is equal to the String(HELLO).",
+    "prefix": "equalsignorecase"
+  },
+  "getBytes": {
+    "body": "getBytes(${1:buf}, ${2:len});$0",
+    "description": "Copies the String’s characters to the supplied buffer.",
+    "prefix": "getbytes"
+  },
+  "indexOf": {
+    "body": "indexOf(${1:val}, ${2:from});$0",
+    "description": "Locates a character or String within another String. By default, searches from the beginning of the String, but can also start from a given index, allowing for the locating of all instances of the character or String.",
+    "prefix": "indexof"
+  },
+  "lastIndexOf": {
+    "body": "lastIndexOf(${1:val}, ${2:from});$0",
+    "description": "Locates a character or String within another String. By default, searches from the end of the String, but can also work backwards from a given index, allowing for the locating of all instances of the character or String.",
+    "prefix": "lastindexof"
+  },
+  "length": {
+    "body": "length();$0",
+    "description": "Returns the length of the String, in characters. (Note that this doesn’t include a trailing null character.)",
+    "prefix": "length"
+  },
+  "remove": {
+    "body": "remove(${1:index}, ${2:cont});$0",
+    "description": "Modify in place a String removing chars from the provided index to the end of the String or from the provided index to index plus count.",
+    "prefix": "remove"
+  },
+  "replace": {
+    "body": "replace(${1:substring1}, ${2:substring2});$0",
+    "description": "The String replace() function allows you to replace all instances of a given character with another character. You can also use replace to replace substrings of a String with a different substring.",
+    "prefix": "replace"
+  },
+  "reserve": {
+    "body": "reserve(${1:size});$0",
+    "description": "The String reserve() function allows you to allocate a buffer in memory for manipulating Strings.",
+    "prefix": "reserve"
+  },
+  "setCharAt": {
+    "body": "setCharAt(${1:index}, ${2:c});$0",
+    "description": "Sets a character of the String. Has no effect on indices outside the existing length of the String.",
+    "prefix": "setcharat"
+  },
+  "startsWith": {
+    "body": "startsWith(${1:string2});$0",
+    "description": "Tests whether or not a String starts with the characters of another String.",
+    "prefix": "startswith"
+  },
+  "substring": {
+    "body": "substring(${1:from}, ${2:to});$0",
+    "description": "Get a substring of a String. The starting index is inclusive (the corresponding character is included in the substring), but the optional ending index is exclusive (the corresponding character is not included in the substring). If the ending index is omitted, the substring continues to the end of the String.",
+    "prefix": "substring"
+  },
+  "toCharArray": {
+    "body": "toCharArray(${1:buf}, ${2:len});$0",
+    "description": "Copies the String’s characters to the supplied buffer.",
+    "prefix": "tochararray"
+  },
+  "toFloat": {
+    "body": "toFloat();$0",
+    "description": "Converts a valid String to a float. The input String should start with a digit. If the String contains non-digit characters, the function will stop performing the conversion. For example, the Strings 123.45, 123, and 123fish are converted to 123.45, 123.00, and 123.00 respectively. Note that 123.456 is approximated with 123.46. Note too that floats have only 6-7 decimal digits of precision and that longer Strings might be truncated.",
+    "prefix": "tofloat"
+  },
+  "toInt": {
+    "body": "toInt();$0",
+    "description": "Converts a valid String to an integer. The input String should start with an integer number. If the String contains non-integer numbers, the function will stop performing the conversion.",
+    "prefix": "toint"
+  },
+  "toLowerCase": {
+    "body": "toLowerCase();$0",
+    "description": "Get a lower-case version of a String. As of 1.0, toLowerCase() modifies the String in place rather than returning a new one.",
+    "prefix": "tolowercase"
+  },
+  "toUpperCase": {
+    "body": "toUpperCase();$0",
+    "description": "Get an upper-case version of a String. As of 1.0, toUpperCase() modifies the String in place rather than returning a new one.",
+    "prefix": "touppercase"
+  },
+  "trim": {
+    "body": "trim();$0",
+    "description": "Get a version of the String with any leading and trailing whitespace removed. As of 1.0, trim() modifies the String in place rather than returning a new one.",
+    "prefix": "trim"
+  },
+  // Structure
+  "struct": {
+    "body": "struct ${1:type_name} {\n\t${2:// Data members}\n\n\t}${3:// types, *types}\n;$0",
+    "description": "It enables the programmer to create a variable that structures a selected set of data.",
+    "prefix": "struct"
+  },
+  "class": {
+    "body": "class ${1:type_name}\n{\n\tpublic:\n\t\t${1:type_name}(${2:type_variable});\n\t\t${3:// Data members}\n\n\tprivate:\n\t\t${4:// Data members}\n};\n\n${1:type_name} :: ${1:type_name}\n{\n\t${5:// Data members}\n}\n${6:// More Fuctions}\n$0",
+    "description": " It is a user defined data type, which holds its own data members and member functions, which can be accessed and used by creating an instance of that class.",
+    "prefix": "class"
   }
 }

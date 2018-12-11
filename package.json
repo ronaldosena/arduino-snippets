@@ -2,12 +2,12 @@
   "name": "arduino-snippets",
   "displayName": "arduino-snippets",
   "description": "Code snippets for arduino",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": {
 		"type": "git",
-		"url": "https://github.com/ronaldosena/arduino-snippets.git"
+		"url": "https://github.com/ronaldosea/arduino-snippets, https://github.com/ViniciusTxc3/arduino-snippets"
 	},
-  "publisher": "ronaldosena",
+  "publisher": "ronaldosena, ViniciusTeixeira",
   "engines": {
     "vscode": "^1.17.0"
   },
