@@ -5,9 +5,9 @@
   "version": "1.0.2",
   "repository": {
 		"type": "git",
-		"url": "https://github.com/ronaldosea/arduino-snippets, https://github.com/ViniciusTxc3/arduino-snippets"
+		"url": "https://github.com/ronaldosena/arduino-snippets"
 	},
-  "publisher": "ronaldosena, ViniciusTeixeira",
+  "publisher": "ronaldosena",
   "engines": {
     "vscode": "^1.17.0"
   },
@@ -19,10 +19,6 @@
       {
         "language": "cpp",
         "path": "./snippets/snippets.json"
-      },
-      {
-        "extensions": ".ino",
-        "path": "./snippets/arduino.code-snippets"
       }
     ]
   },

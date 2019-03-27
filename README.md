@@ -85,7 +85,7 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 | `detachInterrupt`    | [detachInterrupt()](https://www.arduino.cc/reference/en/language/functions/external-interrupts/detachinterrupt/)         |
 | Interrupts   |
 | `interrupts`         | [interrupts()](https://www.arduino.cc/reference/en/language/functions/interrupts/interrupts/)                     |
-| `noInterrupts`       | [noInterrupts()]https://www.arduino.cc/reference/en/language/functions/interrupts/nointerrupts/)                     |
+| `noInterrupts`       | [noInterrupts()](https://www.arduino.cc/reference/en/language/functions/interrupts/nointerrupts/)                     |
 | Math   |
 | `abs`                | [abs()](https://www.arduino.cc/reference/en/language/functions/math/abs/)                     |
 | `constrain`          | [constrain()](https://www.arduino.cc/reference/en/language/functions/math/constrain/)               |
